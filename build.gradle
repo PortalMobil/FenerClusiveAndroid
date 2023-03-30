@@ -3,7 +3,7 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-android-extensions'
     id 'org.jetbrains.kotlin.plugin.serialization'
-
+    id 'maven-publish'
 }
 
 android {
@@ -31,6 +31,22 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+
+                groupId = 'com.github.PortalMobil'
+                artifactId = 'FenerClusiveAndroid'
+                version = '1.0.0'
+
+            }
+        }
+    }
 }
 
 dependencies {
@@ -45,6 +61,5 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1")
     implementation 'com.google.code.gson:gson:2.9.0'
     implementation 'com.github.bumptech.glide:glide:4.15.1'
-    implementation 'nl.joery.animatedbottombar:library:1.1.0'
 
 }
