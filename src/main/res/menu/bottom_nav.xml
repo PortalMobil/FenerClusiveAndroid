@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="@string/main_page"
+        android:id="@+id/menu_main_page"
+        android:icon="@drawable/star" />
+    <item
+        android:title="@string/privilege"
+        android:id="@+id/menu_privilege"
+        android:icon="@drawable/star" />
+    <item
+        android:title="@string/second_hand"
+        android:id="@+id/menu_second_hand"
+        android:icon="@drawable/star" />
+    <item
+        android:title="@string/profile"
+        android:id="@+id/menu_profile"
+        android:icon="@drawable/star" />
+    <item
+        android:title="@string/market"
+        android:id="@+id/menu_market"
+        android:icon="@drawable/star"/>
+</menu>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+    <string name="privilege">AYRICALIKLAR</string>
+    <string name="main_page">ANA SAYFA</string>
+    <string name="second_hand">2.El</string>
+    <string name="profile">PROFİL</string>
+    <string name="market">MERKET</string>
+    <string name="review_now">Hemen İncele</string>
+    <string name="all_cities">Tüm Şehirler</string>
+    <string name="search_in_privilege">Tüm Ayrıcalıklarda Ara</string>
+    <string name="campaign_count">1/12</string>
+</resources>
