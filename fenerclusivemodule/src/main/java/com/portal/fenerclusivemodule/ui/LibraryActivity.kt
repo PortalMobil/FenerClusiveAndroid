@@ -1,11 +1,8 @@
 package com.portal.fenerclusivemodule.ui
 
-import android.os.Build
 import android.os.Bundle
 import android.view.View
-import android.view.Window
-import android.view.WindowInsets
-import android.view.WindowManager
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -32,10 +29,21 @@ class LibraryActivity : AppCompatActivity(), CategorySelectListener {
         setContentView(R.layout.activity_library)
         supportActionBar?.hide()
 
-
         btn_back.setOnClickListener {
             onBackPressed()
         }
+
+        btn_search.setOnClickListener {
+            AlertDialog.Builder(this)
+                .setTitle("FenerClusive")
+                .setMessage("FenerClusive")
+                .setCancelable(true)
+                .setPositiveButton("close"){ dialog, which ->
+                    dialog.cancel()
+                }.show()
+
+        }
+
         menuAdapter = MenuAdapter(getMenuWithIcons(), this)
         rw_top_menu.adapter = menuAdapter
         campaignAdapter = CampaignAdapter(listOf())
